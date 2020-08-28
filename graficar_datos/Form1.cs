@@ -13,7 +13,7 @@ namespace graficar_datos
     {
         Random random = new Random();
         string dato, portname, fecha, hora, fecom;
-        int tiempo = 3400,datum;
+        int tiempo = 3500,datum;
         double voltaje;
         double[] datos = new double[100];// en este vector se almacenararn los valores de voltaje para despues usarlos
         int[] tiempos = new int[30];// guardar los valor del tiempo
