@@ -203,11 +203,11 @@ namespace graficar_datos
             
             //timer1.Enabled = true;
             //tiempo = 0;
-            int t =3300;
+            /*int t =3300*/;
 
             foreach (var dato in datos)
             {
-                t++;
+                tiempo++;
                 //StreamWriter agregar = File.AppendText("LOG.txt");
                 ////agregar.WriteLine(fecom+" "+ voltaje.ToString());
                 //agregar.WriteLine(t.ToString() + " " + " hora" + " " + hora + "," + " voltaje" + " " + dato.ToString());
@@ -216,7 +216,7 @@ namespace graficar_datos
                 //agregar.Close();
 
                 //conectandose.Desconectar();
-                conectandose.Insertar(Convert.ToInt32(t), fecom, (Convert.ToString(dato)));
+                conectandose.Insertar(Convert.ToInt32(tiempo), fecom, (Convert.ToString(dato)));
                 //lbl_timer.Text = t.ToString();
                 //lbl_timer.Text = fecom;
                 //lbl_timer.Text = dato.ToString();
